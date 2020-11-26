@@ -19,6 +19,30 @@
 
 https://colab.research.google.com/drive/1AI3a2gWrKikqaS6HKDvKqFbn-WZkdmYU?usp=sharing
 
+
+## Sample Summary:
+#### There are only 2 lines of code to be run in R
+```
+df <- readRDS("{doc_name}.rds")
+write.csv(df, "{doc_name}.csv")
+```
+#### The challenge is to automate this.
+#### The automation and file management is easier in Python
+#### (and in some cases the required code-stack is python, not R)
+ 
+#### What we need is the ability to call an R script inside Python:
+#### We can do this with these ~two lines (including the import):
+```
+import subprocess
+ 
+retcode = subprocess.call(['/usr/bin/Rscript','convert.r'])
+or
+retcode = subprocess.call([ where R is on your computer , the r script])
+```
+
+
+## Example Code
+
 ```
 # Mix Python and R to convert files to .csv
  
