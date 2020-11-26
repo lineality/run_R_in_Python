@@ -26,13 +26,10 @@ https://colab.research.google.com/drive/1AI3a2gWrKikqaS6HKDvKqFbn-WZkdmYU?usp=sh
 df <- readRDS("{doc_name}.rds")
 write.csv(df, "{doc_name}.csv")
 ```
-#### The challenge is to automate the R code.
-#### The automation and file management is easier in Python
-#### (and in some cases the required code-stack is python, not R)
+#### The challenge is to automate the R code. The automation and file management is easier in Python (and in some cases the required code-stack is python, not R)
  
 #### What we need is the ability to call an R script inside Python:
-#### We can do this with these ~two lines (including the import)
-#### which wonderfully does not require any special installs or pip-installed libraries, just 'subprocess' which is standard:
+#### We can do this with these ~two lines (including the import), which wonderfully does not require any special installs or pip-installed libraries, just 'subprocess' which is standard:
 ```
 import subprocess
  
@@ -41,7 +38,7 @@ or
 retcode = subprocess.call([ where R is on your computer , the r script])
 ```
 ## Script Factory
-#### With python we can make and remake and run R script very easily as we need them. This may be a little verbose, but it is not fragile, OS dependent, or a black box. 
+#### With python we can make and remake and run R scripts very easily as we need them. This may be a little verbose, but it is not fragile, OS dependent, or a black box. 
 
 
 
@@ -106,7 +103,7 @@ def write_script(doc_name):
    file_to_create1.write(readme_text)
    file_to_create1.close()
  
-   pass
+   return None
  
 # in the case of a long wait, give the user some idea
 # of the progress through the files (crude but works)
