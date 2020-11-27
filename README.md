@@ -33,9 +33,9 @@ write.csv(df, "{doc_name}.csv")
 ```
 import subprocess
  
-retcode = subprocess.call(['/usr/bin/Rscript','convert.r'])
+subprocess.call(['/usr/bin/Rscript','convert.r'])
 or
-retcode = subprocess.call([ where R is on your computer , the r script])
+subprocess.call([ where R is on your computer , the r script])
 ```
 ## Script Factory
 #### With python we can make and remake and run R scripts very easily as we need them. This may be a little verbose, but it is not fragile, OS dependent, or a black box. 
@@ -61,10 +61,8 @@ retcode = subprocess.call([ where R is on your computer , the r script])
 # that can be called and will convert all applicable files
 # inside a directory
  
- 
-# e.g. files https://hanlab.uth.edu/HeRA/download
-# core code to run an r script in python
-# https://stackoverflow.com/questions/24544190/calling-r-script-from-python-using-rpy2#24544362
+# e.g. let's convert the .rds files here
+# https://hanlab.uth.edu/HeRA/download
  
 # There are only 2 lines of code to be run in R
 # df <- readRDS("{doc_name}.rds")
@@ -78,9 +76,9 @@ retcode = subprocess.call([ where R is on your computer , the r script])
 # We can do this with these ~two lines (including the import):
  
 # import subprocess
-# retcode = subprocess.call(['/usr/bin/Rscript','convert.r'])
+# subprocess.call(['/usr/bin/Rscript','convert.r'])
 # or
-# retcode = subprocess.call([ where R is on your computer , the r script])
+# subprocess.call([ where R is on your computer , the r script])
  
 # The strategy is to use python to make and then call R scripts
  
@@ -126,7 +124,7 @@ for filename in os.listdir(the_path):
        # run the R script:
        # which converts the .rds to .csv!
        # note: requires import subprocess
-       retcode = subprocess.call(['/usr/bin/Rscript','convert.r'])
+       subprocess.call(['/usr/bin/Rscript','convert.r'])
  
    # show progress:
    progress_counter += 1
