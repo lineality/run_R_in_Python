@@ -9,7 +9,7 @@
 - small is good
 - fewer libraries and dependencies are better
 - cross-system compatibility is good
-#### this uses no special libraries so it can be used without any need to configure environments
+#### This uses no special libraries so it can be used without any need to configure environments.
 
 
 ## Approach:
@@ -54,7 +54,6 @@ subprocess.call([ where R is on your computer , the r script])
 [python script](https://github.com/lineality/run_R_in_Python/blob/main/two_way_py_r.py)  
 [notebook](https://github.com/lineality/run_R_in_Python/blob/main/2_Way_Py_R.ipynb) 
 [Colab Online](https://colab.research.google.com/drive/1D3A6btJgyhJ0VH7j6oqQC6SSUkK4xBAT?usp=sharing) 
-
 
 
 
