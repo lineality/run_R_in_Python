@@ -1,6 +1,9 @@
 # run_R_in_Python
 #### An Approach to run R scripts inside Python scripts, to get the best of both worlds.
 
+# Goals
+## 1. Run an R-script from python (Simple call)
+## 2. Get the output of a function (run in R) back into python (Two Way Communication)
 
 ## Spirit of Approach
 - small is good
@@ -10,14 +13,12 @@
 
 
 ## Approach:
-#### The strategy is to use python to make and then call R scripts
+#### The strategy is to use python to make and then call R scripts.
 
 
 ## Google Colab Notebooks:
 
-#### Amazingly, this works in Colab (so Colab must include R as well as Python)
-
-https://colab.research.google.com/drive/1AI3a2gWrKikqaS6HKDvKqFbn-WZkdmYU?usp=sharing
+#### Amazingly, most of this works in Colab (so Colab includes R as well as Python...wow...)
 
 
 ## Sample Summary:
@@ -42,15 +43,17 @@ subprocess.call([ where R is on your computer , the r script])
 
 
 
-## Example Code, Notebooks, Script:
+# Example Code, Notebooks, Scripts:
 
 #### Calling an R function, automated with Python
 [python script](https://github.com/lineality/run_R_in_Python/blob/main/py_r_csv.py)  
 [Notebook](https://github.com/lineality/run_R_in_Python/blob/main/colab_py_r_csv_test.ipynb) 
+[Colab Online](https://colab.research.google.com/drive/1AI3a2gWrKikqaS6HKDvKqFbn-WZkdmYU?usp=sharing#scrollTo=eQ1ExjI0erk_) 
 
 #### Sending output back and forth between R and Python
 [python script](https://github.com/lineality/run_R_in_Python/blob/main/two_way_py_r.py)  
 [notebook](https://github.com/lineality/run_R_in_Python/blob/main/2_Way_Py_R.ipynb) 
+[Colab Online](https://colab.research.google.com/drive/1D3A6btJgyhJ0VH7j6oqQC6SSUkK4xBAT?usp=sharing) 
 
 
 
