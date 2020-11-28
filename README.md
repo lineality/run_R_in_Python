@@ -31,7 +31,7 @@ write.csv(df, "{doc_name}.csv")
 #### The challenge is to automate the R code. The automation and file management is easier in Python (and in some cases the required code-stack is python, not R)
  
 #### What we need is the ability to call an R script inside Python:
-#### We can do this with these ~two lines (including the import), which wonderfully does not require any special installs or pip-installed libraries, just 'subprocess' which is standard:
+#### We can do this with this one line (not including the import), which wonderfully does not require any special installs or pip-installed libraries, just 'subprocess' which comes standard:
 ```
 import subprocess
  
