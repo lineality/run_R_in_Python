@@ -45,12 +45,12 @@ subprocess.call([ where R is on your computer , the r script])
 ## Example Code, Notebooks, Script:
 
 #### Calling an R function, automated with Python
-[python script](https://github.com/lineality/run_R_in_Python/blob/main/py_r_csv.py)
-[Notebook]https://github.com/lineality/run_R_in_Python/blob/main/colab_py_r_csv_test.ipynb
+[python script](https://github.com/lineality/run_R_in_Python/blob/main/py_r_csv.py)  
+[Notebook](https://github.com/lineality/run_R_in_Python/blob/main/colab_py_r_csv_test.ipynb) 
 
 #### Sending output back and forth between R and Python
-[python script](https://github.com/lineality/run_R_in_Python/blob/main/two_way_py_r.py)
-[notebook]https://github.com/lineality/run_R_in_Python/blob/main/2_Way_Py_R.ipynb
+[python script](https://github.com/lineality/run_R_in_Python/blob/main/two_way_py_r.py)  
+[notebook](https://github.com/lineality/run_R_in_Python/blob/main/2_Way_Py_R.ipynb) 
 
 
 
