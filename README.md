@@ -42,7 +42,11 @@ subprocess.call([ where R is on your computer , the r script])
 ## Script Factory
 #### With python we can make and remake and run R scripts very easily as we need them. This may be a little verbose, but it is not fragile, OS dependent, or a black box. 
 
+# Summary 2. Output from R back into Python (Two Way Communication)
 
+#### There are only 2 lines of code to be run in R
+```
+df
 
 # Example Code, Notebooks, Scripts:
 
