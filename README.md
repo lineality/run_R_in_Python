@@ -1,23 +1,24 @@
 # run_R_in_Python
-#### An Approach to run R scripts inside Python scripts, to get the best of both worlds.
+### An Approach to run R scripts inside Python scripts, to get the best of both worlds.
+
 
 # Goals
 #### 1. Run an R-script from python (Simple call)
 #### 2. Get the output of a function (run in R) back into python (Two Way Communication)
 
+
 # Spirit of Approach
 - small is good
 - fewer libraries and dependencies are better
 - cross-system compatibility is good
-#### This uses no special libraries so it can be used without any need to configure environments.
+- less special environment configuration is good
 
 
 ## Approach:
 #### The strategy is to use python to make and then call R scripts.
 
 
-## Google Colab Notebooks:
-
+## R in Colab:
 #### Amazingly, most of this works in Colab (so Colab includes R as well as Python...wow...)
 
 
