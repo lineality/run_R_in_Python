@@ -54,6 +54,8 @@ e.g.
    funtion_with_ouput()
    sink(file = NULL)
 ```
+#### This can output individual values or even the converted contents of dataframes (e.g. converted into .csv format). 
+ 
 
 # Example Code, Notebooks, Scripts:
 
