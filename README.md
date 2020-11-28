@@ -44,9 +44,16 @@ subprocess.call([ where R is on your computer , the r script])
 
 # Summary 2. Output from R back into Python (Two Way Communication)
 
-#### There are only 2 lines of code to be run in R
+#### Just two lines of R code will direct the output into a file (rather than a console print). The function needed is sink(). 
+ 
+#### A "Sink Sandwich":
+#### Sandwich your code between two calls to the sink() function, and the output is then readable to python (in the file you name in that call).    
+e.g.
 ```
-df
+   sink(file = "ouput_file_name.txt")
+   funtion_with_ouput()
+   sink(file = NULL)
+```
 
 # Example Code, Notebooks, Scripts:
 
@@ -59,7 +66,5 @@ df
 [python script](https://github.com/lineality/run_R_in_Python/blob/main/two_way_py_r.py)  
 [notebook](https://github.com/lineality/run_R_in_Python/blob/main/2_Way_Py_R.ipynb) 
 [Colab Online](https://colab.research.google.com/drive/1D3A6btJgyhJ0VH7j6oqQC6SSUkK4xBAT?usp=sharing) 
-
-
 
 
