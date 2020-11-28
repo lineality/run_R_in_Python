@@ -22,7 +22,7 @@
 #### Amazingly, most of this works in Colab (so Colab includes R as well as Python...wow...)
 
 
-## Sample Summary:
+# Summary 1. Run an R-script from python (Simple call)
 #### There are only 2 lines of code to be run in R
 ```
 df <- readRDS("{doc_name}.rds")
