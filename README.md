@@ -3,7 +3,7 @@
 
 
 # Goals
-#### 1. Run an R-script from python (Simple call)
+#### 1. Run an R-script from python (Simple Call)
 #### 2. Get the output of a function (run in R) back into python (Two Way Communication)
 
 
