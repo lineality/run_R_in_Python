@@ -6,17 +6,21 @@
 #### 1. Run an R-script from python (Simple Call)
 #### 2. Get the output of a function (run in R) back into python (Two Way Communication)
 
+
 # Spirit of Approach
 - small is good
 - fewer libraries and dependencies are better
 - cross-system compatibility is good
 - less special environment configuration is good
 
+
 ## Approach:
 #### The strategy is to use python to make and then call R scripts.
 
+
 ## R in Colab:
 #### Amazingly, most of this works in Colab (so Colab includes R as well as Python...wow...)
+
 
 # Summary 1. Run an R-script from python (Simple call)
 #### There are only 2 lines of code to be run in R
@@ -43,7 +47,7 @@ subprocess.call([ where R is on your computer , the r script])
 #### Just two lines of R code will direct the output into a file (rather than a console print). The function needed is sink(). 
  
 #### A "Sink Sandwich":
-#### Sandwich your code between two calls to the sink() function, and the output is then readable to python (in the file you name in that call).    
+#### The structure of the R code you create should look like the following so that the output is accessible to python (e.g. so that the output is a file accessible to another program and not just a print to the terminal). Sandwich your R function between two calls to the sink() function, and the output is then readable to python (in the file you name in that call).    
 e.g.
 ```
    sink(file = "ouput_file_name.txt")
@@ -52,6 +56,7 @@ e.g.
 ```
 #### This can output individual values or even the converted contents of dataframes (e.g. converted into .csv format). 
  
+
 # Example Code, Notebooks, Scripts:
 
 #### Calling an R function, automated with Python
